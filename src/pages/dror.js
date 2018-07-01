@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import styled from 'styled-components'
+import Type from '../components/Type'
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -15,11 +16,20 @@ const Wrapper = styled.section`
 `
 
 const Dror = () => (
-  <div>
+  <Fragment>
     <Wrapper>
-      <Title>Hello World, this is my first styled component!</Title>
+      <Title>{React.version}</Title>
     </Wrapper>
-  </div>
+    <Type
+      strings="A Crypto Merchants Network"
+      speed={45}
+      deleteSpeed={100}
+      pause={1000}
+      deleteChars={7}
+      replaceWith="<strong style='color: black'>community<strong>"
+      replaceSpeed={70}
+    />
+  </Fragment>
 )
 
 export default Dror
