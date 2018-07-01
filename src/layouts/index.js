@@ -118,7 +118,7 @@ class Template extends React.Component {
 
         {content}
 
-        <div id="bg"></div>
+        <div id={this.props.location.pathname === '/' ? "bg" : "blank"}></div>
       </div>
     )
   }
