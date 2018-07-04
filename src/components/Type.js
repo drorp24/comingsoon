@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import TypeIt from 'typeit'
-import styled from 'styled-components'
-
-const Span = styled.span`
-  color: black;
-`
 
 class Type extends Component {
   constructor(props) {
@@ -23,7 +18,7 @@ class Type extends Component {
   render() {
     return (
       <span
-        style={{ color: 'black' }}
+        style={{ fontSize: '2em' }}
         ref={el => {
           this.el = el
         }}
