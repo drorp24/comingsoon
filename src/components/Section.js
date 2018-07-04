@@ -7,10 +7,14 @@ const Container = styled.div`
   color: ${props => props.theme.color};
 `
 
+const Title = styled.div`
+  font-size: ${props => props.theme.section.title.fontSize};
+`
+
 const Section = props => (
   <Container>
     <p>Section</p>
-    {props.children}
+    <Title>{props.children}</Title>
   </Container>
 )
 

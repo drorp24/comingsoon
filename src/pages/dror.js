@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react'
 import { injectGlobal, ThemeProvider } from 'styled-components'
 import Section from '../components/Section'
-import Slogan from '../components/Slogan'
+import Slogan from '../content/Slogan'
+import Counter from '../content/Counter'
 
-// Attached to body element, henced affects every page
+// Attached to body element, hence affects every page
 injectGlobal`
   body {
 
@@ -13,6 +14,11 @@ injectGlobal`
 // Affects everything beneath theme={theme}
 const theme = {
   color: '#000',
+  section: {
+    title: {
+      fontSize: '2vw',
+    },
+  },
 }
 
 const Dror = () => (
@@ -21,7 +27,9 @@ const Dror = () => (
       <Section>
         <Slogan />
       </Section>
-      <Section />
+      <Section>
+        <Counter />
+      </Section>
       <Section />
     </Fragment>
   </ThemeProvider>
