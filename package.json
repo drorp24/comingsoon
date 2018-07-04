@@ -4,9 +4,7 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
-    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-styled-components": "^1.5.1",
-    "babel-plugin-transform-object-assign": "^6.22.0",
     "gatsby": "^1.9.235",
     "gatsby-image": "^1.0.42",
     "gatsby-link": "^1.6.39",
