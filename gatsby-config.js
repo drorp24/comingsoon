@@ -1,4 +1,3 @@
-/* eslint quotes: 0 */
 module.exports = {
   siteMetadata: {
     title: 'Crymbo Crypto Community',
@@ -43,4 +42,3 @@ module.exports = {
     `gatsby-plugin-react-next`,
   ],
 }
-/* eslint quotes: 0 */
