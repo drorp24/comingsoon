@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { injectGlobal, ThemeProvider } from 'styled-components'
 import Section from '../components/Section'
 import Slogan from '../content/Slogan'
-import Counter from '../content/Counter'
+import Facts from '../content/Facts'
 
 // Attached to body element, hence affects every page
 injectGlobal`
@@ -28,7 +28,7 @@ const Dror = () => (
         <Slogan />
       </Section>
       <Section>
-        <Counter />
+        <Facts />
       </Section>
       <Section />
     </Fragment>

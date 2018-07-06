@@ -1,6 +1,7 @@
 import React from 'react'
 import CountUp from 'react-countup'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const Container = styled.div`
   display: flex;
@@ -9,7 +10,7 @@ const Container = styled.div`
   justify-content: center;
 `
 
-const Figure = styled.div`
+const Counter = styled.div`
   font-weight: 900;
   font-size: 5em;
 `
@@ -24,16 +25,23 @@ const Text = styled.div`
   font-weight: 400;
   font-size: 1em;
   color: #888;
+  text-align: center;
 `
 
-const Counter = () => (
+const Fact = props => (
   <Container>
-    <Title>Soaring market</Title>
-    <Figure>
-      <CountUp start={0} end={99} duration={3} />%
-    </Figure>
-    <Text>of world's population have not yet acquired cryptocurrency.</Text>
+    <Title>{props.title}</Title>
+    <Counter>
+      <CountUp start={0} end={props.count} duration={3} />%
+    </Counter>
+    <Text>{props.text}</Text>
   </Container>
 )
 
-export default Counter
+Fact.propTypes = {
+  title: PropTypes.string,
+  count: PropTypes.string,
+  text: PropTypes.number,
+}
+
+export default Fact
