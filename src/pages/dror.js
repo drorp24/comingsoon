@@ -3,6 +3,7 @@ import { injectGlobal, ThemeProvider } from 'styled-components'
 import Section from '../components/Section'
 import Slogan from '../content/Slogan'
 import Facts from '../content/Facts'
+import '../../node_modules/animate.css/animate.css'
 
 // Attached to body element, hence affects every page
 injectGlobal`

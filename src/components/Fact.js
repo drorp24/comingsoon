@@ -29,7 +29,7 @@ const Text = styled.div`
 `
 
 const Fact = props => (
-  <Container>
+  <Container className="animated fadeInUp">
     <Title>{props.title}</Title>
     <Counter>
       <CountUp start={0} end={props.count} duration={3} />%
