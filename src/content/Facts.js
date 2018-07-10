@@ -14,23 +14,24 @@ const Aligned = styled.div`
   align-items: center;
 `
 
+/* eslint quotes: 'off' */
 const Facts = () => (
   <Aligned>
-    <Container>
+    <Container className="fadeIn">
       <Fact
         title={'Soaring market'}
         count={99}
         text={"of world's population have not yet acquired cryptocurrency."}
       />
     </Container>
-    <Container>
+    <Container className="fadeIn">
       <Fact
         title={'Soaring market'}
         count={99}
         text={"of world's population have not yet acquired cryptocurrency."}
       />
     </Container>
-    <Container>
+    <Container className="fadeIn">
       <Fact
         title={'Soaring market'}
         count={99}

@@ -24,6 +24,7 @@
     "lodash": "^4.17.4",
     "react-countup": "^3.0.3",
     "react-helmet": "^5.2.0",
+    "react-inview-monitor": "^2.2.0",
     "styled-components": "^3.3.3",
     "typeit": "^5.10.1"
   },

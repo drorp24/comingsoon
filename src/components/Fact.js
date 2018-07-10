@@ -2,6 +2,7 @@ import React from 'react'
 import CountUp from 'react-countup'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import InViewMonitor from 'react-inview-monitor'
 
 const Container = styled.div`
   display: flex;
@@ -13,12 +14,14 @@ const Container = styled.div`
 const Counter = styled.div`
   font-weight: 900;
   font-size: 5em;
+  color: #000;
 `
 
 const Title = styled.div`
   font-weight: 700;
   font-size: 1em;
   text-transform: uppercase;
+  color: #000;
 `
 
 const Text = styled.div`
@@ -29,13 +32,18 @@ const Text = styled.div`
 `
 
 const Fact = props => (
-  <Container className="animated fadeInUp">
-    <Title>{props.title}</Title>
-    <Counter>
-      <CountUp start={0} end={props.count} duration={3} />%
-    </Counter>
-    <Text>{props.text}</Text>
-  </Container>
+  <InViewMonitor
+    classNameNotInView="vis-hidden"
+    classNameInView="animated fadeInUp delay"
+  >
+    <Container>
+      <Title>{props.title}</Title>
+      <Counter>
+        <CountUp start={0} end={props.count} duration={3} />%
+      </Counter>
+      <Text>{props.text}</Text>
+    </Container>
+  </InViewMonitor>
 )
 
 Fact.propTypes = {
