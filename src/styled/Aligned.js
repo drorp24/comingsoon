@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Aligned = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: ${props => (props.around ? 'space-around' : 'center')};
   align-items: center;
   flex-direction: ${props => (props.vertically ? 'column' : 'row')};
 `

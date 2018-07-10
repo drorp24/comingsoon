@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const counterStyle = {
   fontWeight: '900',
-  fontSize: '5em',
+  fontSize: '4em',
   color: '#000',
 }
 
@@ -34,7 +34,7 @@ const Text = styled.div`
 const Counter = props => (
   <InViewMonitor
     classNameNotInView="vis-hidden"
-    classNameInView="animated fadeInUp centered"
+    classNameInView="centered"
     childPropsInView={{ start: props.start }}
   >
     <CountUp
@@ -49,10 +49,7 @@ const Counter = props => (
 )
 
 const Fact = props => (
-  <InViewMonitor
-    classNameNotInView="vis-hidden"
-    classNameInView="animated fadeInUp centered delay"
-  >
+  <InViewMonitor classNameNotInView="vis-hidden" classNameInView="centered">
     <Container>
       <Title>{props.title}</Title>
       <Counter start={props.start} end={props.end} />

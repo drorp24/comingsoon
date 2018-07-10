@@ -3,6 +3,7 @@ import { injectGlobal, ThemeProvider } from 'styled-components'
 import Section from '../components/Section'
 import Slogan from '../content/Slogan'
 import Facts from '../content/Facts'
+import Features from '../content/Features'
 import '../../node_modules/animate.css/animate.css'
 import '../assets/css/dror.css'
 
@@ -28,9 +29,12 @@ const Dror = () => (
       <Section>
         <Slogan />
       </Section>
-      <Section />
-      <Facts />
-      <Section />
+      <Section>
+        <Features />
+      </Section>
+      <Section>
+        <Facts />
+      </Section>
     </Fragment>
   </ThemeProvider>
 )
