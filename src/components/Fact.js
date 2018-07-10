@@ -11,11 +11,11 @@ const Container = styled.div`
   justify-content: center;
 `
 
-const Counter = styled.div`
-  font-weight: 900;
-  font-size: 5em;
-  color: #000;
-`
+const counterStyle = {
+  fontWeight: '900',
+  fontSize: '5em',
+  color: '#000',
+}
 
 const Title = styled.div`
   font-weight: 700;
@@ -31,16 +31,31 @@ const Text = styled.div`
   text-align: center;
 `
 
+const Counter = props => (
+  <InViewMonitor
+    classNameNotInView="vis-hidden"
+    classNameInView="animated fadeInUp centered"
+    childPropsInView={{ start: props.start }}
+  >
+    <CountUp
+      start={0}
+      end={props.end}
+      duration={3}
+      decimals={2}
+      style={counterStyle}
+      suffix={'%'}
+    />
+  </InViewMonitor>
+)
+
 const Fact = props => (
   <InViewMonitor
     classNameNotInView="vis-hidden"
-    classNameInView="animated fadeInUp delay centered"
+    classNameInView="animated fadeInUp centered delay"
   >
     <Container>
       <Title>{props.title}</Title>
-      <Counter>
-        <CountUp start={0} end={props.count} duration={3} />%
-      </Counter>
+      <Counter start={props.start} end={props.end} />
       <Text>{props.text}</Text>
     </Container>
   </InViewMonitor>

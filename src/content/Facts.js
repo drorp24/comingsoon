@@ -7,17 +7,20 @@ const Facts = () => (
   <Aligned horizontally>
     <Fact
       title={'Soaring market'}
-      count={99}
+      start={95}
+      end={99.99}
       text={"of world's population have not yet acquired cryptocurrency."}
     />
     <Fact
       title={'Soaring market'}
-      count={99}
+      start={95}
+      end={99.99}
       text={"of world's population have not yet acquired cryptocurrency."}
     />
     <Fact
       title={'Soaring market'}
-      count={99}
+      start={95}
+      end={99.99}
       text={"of world's population have not yet acquired cryptocurrency."}
     />
   </Aligned>
