@@ -34,7 +34,7 @@ const Text = styled.div`
 const Fact = props => (
   <InViewMonitor
     classNameNotInView="vis-hidden"
-    classNameInView="animated fadeInUp delay"
+    classNameInView="animated fadeInUp delay centered"
   >
     <Container>
       <Title>{props.title}</Title>
@@ -48,8 +48,8 @@ const Fact = props => (
 
 Fact.propTypes = {
   title: PropTypes.string,
-  count: PropTypes.string,
-  text: PropTypes.number,
+  count: PropTypes.number,
+  text: PropTypes.string,
 }
 
 export default Fact
