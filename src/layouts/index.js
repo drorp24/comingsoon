@@ -102,7 +102,6 @@ class Template extends React.Component {
           <div
             style={{
               width: '100vw',
-              padding: '2em',
             }}
           >
             {children()}

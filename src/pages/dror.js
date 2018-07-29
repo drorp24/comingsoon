@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { injectGlobal, ThemeProvider } from 'styled-components'
 import Section from '../components/Section'
 import Slogan from '../content/Slogan'
@@ -6,6 +6,10 @@ import Facts from '../content/Facts'
 import Features from '../content/Features'
 import '../../node_modules/animate.css/animate.css'
 import '../assets/css/dror.css'
+import { ParallaxProvider } from 'react-scroll-parallax'
+import ParallaxEffects from '../content/ParallaxEffects'
+import FirstPage from '../content/FirstPage'
+import pencil from '../assets/images/pencil.jpeg'
 
 // Attached to body element, hence affects every page
 injectGlobal`
@@ -25,7 +29,9 @@ const theme = {
 
 const Dror = () => (
   <ThemeProvider theme={theme}>
-    <Fragment>
+    <ParallaxProvider>
+      <FirstPage />
+      <Section background={pencil} />
       <Section>
         <Slogan />
       </Section>
@@ -35,7 +41,10 @@ const Dror = () => (
       <Section>
         <Facts />
       </Section>
-    </Fragment>
+      <Section>
+        <ParallaxEffects />
+      </Section>
+    </ParallaxProvider>
   </ThemeProvider>
 )
 

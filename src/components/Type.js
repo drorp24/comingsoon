@@ -18,7 +18,7 @@ class Type extends Component {
   render() {
     return (
       <span
-        style={{ fontSize: '2em' }}
+        style={{ ...this.props.style }}
         ref={el => {
           this.el = el
         }}
