@@ -9,7 +9,7 @@ const Slogan = ({ style }) => (
     speed={45}
     deleteSpeed={100}
     pause={600}
-    replaceSpeed={40}
+    replaceSpeed={100}
     style={style}
   />
 )

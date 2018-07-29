@@ -6,6 +6,7 @@ const Title = styled.div`
   font-weight: 700;
   font-size: 2em;
   margin-bottom: 1em;
+  color: #777;
 `
 
 const Text = styled.div`

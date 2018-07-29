@@ -1,7 +1,6 @@
 import React from 'react'
 import { injectGlobal, ThemeProvider } from 'styled-components'
 import Section from '../components/Section'
-import Slogan from '../content/Slogan'
 import Facts from '../content/Facts'
 import Features from '../content/Features'
 import '../../node_modules/animate.css/animate.css'
@@ -31,11 +30,7 @@ const Dror = () => (
   <ThemeProvider theme={theme}>
     <ParallaxProvider>
       <FirstPage />
-      <Section background={pencil} />
-      <Section>
-        <Slogan />
-      </Section>
-      <Section>
+      <Section background={pencil}>
         <Features />
       </Section>
       <Section>

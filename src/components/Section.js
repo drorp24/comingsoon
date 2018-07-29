@@ -2,10 +2,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import pencil from '../assets/images/pencil.jpeg'
+import dream from '../assets/images/dream.jpeg'
 
 const Container = styled.div`
-  height: 70vh;
-  border-bottom: 1px solid #000;
+  height: 100vh;
   color: ${props => props.theme.color};
   background-image: url(${props => props.background});
   background-size: 100%;
@@ -19,7 +19,6 @@ const Title = styled.div`
 
 const Section = ({ background = '', children }) => (
   <Container background={background}>
-    <p>Section</p>
     <Title>{children}</Title>
   </Container>
 )

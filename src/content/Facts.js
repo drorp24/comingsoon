@@ -4,13 +4,7 @@ import Aligned from '../styled/Aligned'
 
 /* eslint quotes: 'off' */
 const Facts = () => (
-  <Aligned horizontally>
-    <Fact
-      title={'Soaring market'}
-      start={95}
-      end={99.99}
-      text={"of world's population have not yet acquired cryptocurrency."}
-    />
+  <Aligned horizontally around width={'30%'}>
     <Fact
       title={'Soaring market'}
       start={95}
