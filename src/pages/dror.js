@@ -9,6 +9,7 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 import ParallaxEffects from '../content/ParallaxEffects'
 import FirstPage from '../content/FirstPage'
 import pencil from '../assets/images/pencil.jpeg'
+import Statistics from '../content/Statistics'
 
 // Attached to body element, hence affects every page
 injectGlobal`
@@ -37,6 +38,7 @@ const Dror = () => (
         <Facts />
       </Section>
       <Section>
+        <Statistics />
         <ParallaxEffects />
       </Section>
     </ParallaxProvider>

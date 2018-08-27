@@ -10,7 +10,7 @@ const FirstPage = () => (
       layers={[
         {
           image: desk,
-          amount: 0.0,
+          amount: 0.15,
           slowerScrollRate: false,
         },
       ]}

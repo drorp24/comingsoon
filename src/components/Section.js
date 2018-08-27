@@ -11,6 +11,7 @@ const Container = styled.div`
   background-size: 100%;
   background-position: center;
   background-position-y: bottom;
+  background-repeat: no-repeat;
 `
 
 const Title = styled.div`

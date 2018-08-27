@@ -15,8 +15,25 @@
   justify-content: center;
   align-items: center;
 }
+.third {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
 .two_thirds {
   width: 66%;
   display: flex;
   justify-content: center;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.section_height {
+  height: 100vh;
+}
+.half_section_height {
+  height: 50vh;
 }
